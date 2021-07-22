@@ -27,7 +27,7 @@ separated by whitespace, in the following format:
 10.6.6.6      foo.example.com
 10.6.6.6      bar.example.com
   
-Development:
+**Development**:
   
 Kindly refer to the file dnspoison.go for the implementation of the DNS Spoofing attack using Golang.
 
@@ -83,7 +83,7 @@ expression is a BPF filter that specifies a subset of the traffic to be
 monitored.
   
   
-  Development:
+**Development**:
   
 Kindly refer to the file dnsdetect.go for the implementation of the DNS Spoof detection using Golang.
 
