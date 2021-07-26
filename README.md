@@ -1,9 +1,9 @@
 # DNS-Attacker-and-Detector-using-GO
 Developed an on-path DNS poisoning attack tool and a passive DNS poisoning attack detector.
 
-Both tools should be developed
-in Go using the GoPacket library, and should support just plain (UDP) DNS
-traffic over port 53.
+Both tools are developed in Go using the GoPacket library.
+
+DNS Attacker - Dnspoison
 -----------------------------------------------------------------------------------------------------------------------------------
 The DNS packet injector, named 'dnspoison', captures the traffic from a network interface in promiscuous mode, and injects forged
 responses to selected DNS A requests with the goal of poisoning the cache of the victim's resolver.
@@ -61,7 +61,7 @@ Following are the key features regarding the implementation:
     - The reused and processed DNS layer is then added as part of a new packet where the source and 
         destination addresses are reversed and sent back to the victim's machine. 
 
-
+DNS Attack Detector- Dnsdetect
 -------------------------------------------------------------------------------------------------------------------------------------
 The DNS poisoning attack detector named 'dnsdetect',
 captures the traffic from a network interface in promiscuous mode and detects
